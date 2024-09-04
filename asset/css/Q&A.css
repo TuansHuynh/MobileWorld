@@ -126,7 +126,13 @@ main{
     display: flex;
     margin: 20px;
 }
-.chu-de_sub_1 a{
+.chu-de_sub_1 a,.chu-de_sub_1 p{
     margin-left: 20px;
+}
+.chu-de_sub_1 a{
     font-size: 20px;
+}
+.chu-de_sub_1 p{
+    margin-top: 10px;
+    color: #2a2a2a;
 }
