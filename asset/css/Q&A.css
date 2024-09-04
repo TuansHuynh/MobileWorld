@@ -83,5 +83,50 @@ main{
     display: block;
 }
 .chu-de_right img{
- width: 100px;
+ width: 150px;
+}
+.chude_right-head{
+    display: flex;
+    margin-bottom: 40px;
+}
+.chude_right-start{
+    display: flex;
+    flex-direction: column;
+}
+.chude_right-start img{
+    width: 500px;
+}
+.chude_right-start a{
+    margin: 15px;
+    font-size:23px;
+    font-weight: 900;
+    width: 450px;
+}
+.chude_right-container-main{
+    margin: 0 0 0 30px ;
+}
+.chu-de_sub{
+    display: flex;
+}
+.chu-de_sub a{
+    width: 350px;
+    margin: 10px;
+}
+.chu-de_sub b{
+    background-color: #dbdbdb;
+    width: 40px;
+    height: 40px; 
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.chu-de_sub_1{
+    display: flex;
+    margin: 20px;
+}
+.chu-de_sub_1 a{
+    margin-left: 20px;
+    font-size: 20px;
 }
