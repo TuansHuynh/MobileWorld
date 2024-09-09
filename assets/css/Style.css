@@ -186,7 +186,7 @@ select {
 .address-content form button:hover {
     color: #FFF200;
 }
-/* ------------------------ phu-kien -------------------- */
+/* ------------------------ Header Phu kien -------------------- */
 .menu_2_li{
     display: flex;
     flex-direction: column;
@@ -279,6 +279,21 @@ main{
         display: flex;
         justify-content: center;
         font-weight: 900;
+    }
+    button{
+        position: relative;
+        font-size: 10px;
+        width: 60px;
+        bottom: 20px;
+        left: 200px;
+        margin-bottom: -20px;
+        border-radius: 10px;
+        padding: 3px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{
+        color: #ff0000;
     }
 }
 .product_menu_1 .prod_1_p{
