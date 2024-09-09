@@ -108,3 +108,14 @@ document.addEventListener('DOMContentLoaded', () => {
   showGroup(currentGroup);
   setInterval(nextGroup, 10000);
 });
+
+// ------------------------------------------
+const btnCart = document.getElementById("cart")
+const showOrder = document.getElementById("order")
+const btnClose = document.querySelector('body')
+btnCart.addEventListener("mouseover",  (e) => {
+  showOrder.style.display = "block"
+})
+btnClose.addEventListener("click", function () {
+  document.querySelector('.order').style.display = "none"
+})

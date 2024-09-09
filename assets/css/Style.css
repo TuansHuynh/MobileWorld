@@ -317,6 +317,9 @@ main{
     border-radius: 15px;
     font-size: 16px;
 }
+.prod_1_p:first-child{
+    text-decoration: line-through;
+}
 .prod_1 a:nth-child(3){
     text-align: center;
 }
