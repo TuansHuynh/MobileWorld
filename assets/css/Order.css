@@ -1,0 +1,39 @@
+.order{
+    position: fixed;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #ddd;
+}
+.order h2{
+    display: flex;
+    justify-content: center;
+}
+.order_container{
+    margin-top: 20px;
+}
+.order_list ul{
+    display: flex;
+    justify-content: space-between;
+}
+.order_list ul li{
+    font-weight: bolder;
+}
+.order table {
+    width: 100%;
+}
+.order table thead tr th:first-child {
+    text-align: left;
+}
+.order table thead tr th {
+    text-align: center;
+}
+.order table tr td {
+    padding: 12px 0;
+}
+.order tbody tr td img{
+    width: 50px;
+}
+tbody td p{
+    display: flex;
+    justify-content: center;
+}

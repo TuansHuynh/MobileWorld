@@ -32,4 +32,3 @@ function addcart(productPrice, productImg, productName) {
     carttotal()
     deleteCart()
 }
-
