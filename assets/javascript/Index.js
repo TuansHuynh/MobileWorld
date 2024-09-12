@@ -110,12 +110,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ------------------------------------------
-const btnCart = document.getElementById("cart")
-const showOrder = document.getElementById("order")
-const btnClose = document.querySelector('body')
-btnCart.addEventListener("mouseover",  (e) => {
-  showOrder.style.display = "block"
+// const btnCart = document.getElementById("cart")
+// const showOrder = document.getElementById("order")
+// const btnClose = document.getElementById('close')
+// btnCart.addEventListener("mouseover",  (e) => {
+//   showOrder.style.display = "block"
+// })
+// btnClose.addEventListener("click", function () {
+//   document.querySelector('#close').style.display = "none"
+// })
+
+const btnCart = document.querySelector('#cart')
+const btnClose = document.querySelector('#close')
+
+btnCart.addEventListener("click", function () {
+    document.querySelector('.order').style.display = "block"
 })
 btnClose.addEventListener("click", function () {
-  document.querySelector('.order').style.display = "none"
-})
+    document.querySelector('#order').style.display = "none"
+})  

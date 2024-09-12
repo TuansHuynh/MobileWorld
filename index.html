@@ -13,7 +13,7 @@
     <nav>
         <a href="index.html"><img class="header_banner" src="Logo/banner.jpg"></a>
     </nav>
-<!--------------------------------Header------------------------------->
+<!--------------------------------Header----------------------------->
 <header>
     <nav>
         <div class="menu_1">
@@ -22,16 +22,17 @@
                 <li id="address" class="menu_li_1">Chọn địa chỉ<i class='bx bx-caret-down'></i></li>
                 <li class="menu_li_2"><input type="text" placeholder="Bạn cần tìm gì ?"><i class='bx bx-search'></i></li>
                 <li class="menu_li_4"><a href="cart.html">Tài Khoản <br> & Đơn Hàng</a></li>
-                <li class="menu_li_3"><a class="cart" id="cart" href="#"><i class='bx bx-cart-alt'></i>Giỏ Hàng</a>
-                    
-                </li>
+                <li id="cart" class="menu_li_3"><a class="cart" href="#"><i class='bx bx-cart-alt'></i>Giỏ Hàng</a></li>
                 <li class="menu_li_5"><a href="#">24h <br> Công Nghệ</a></li>
                 <li class="menu_li_6 drawer hline"><a href="Q&A.html">Hỏi Đáp</a></li>
                 <li class="menu_li_7 drawer hline"><a href="Login.html">Đăng Nhập</a></li>
             </ul>
 
-            <div  class="order" id="order">
+            <div class="order" id="order">
                 <h2>Sản phẩm đã đặt hàng</h2>
+                <div class="close">
+                    <p id="close">X Đóng</p>
+                </div>
                 <div class="order_container">
                     <div class="order_list">
                         <form action="">
@@ -40,17 +41,32 @@
                                     <tr>
                                         <th>Sản phẩm</th>
                                         <th>Giá gốc</th>
-                                        <th>Chiết khấu</th>
                                         <th>Số lượng</th>
                                         <th>Chọn</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                        <!-- <tr>
+                                            <td  style="display: flex; align-items: center; text-align: center;">
+                                                <img src="Logo/Phone/Iphone 14.jpg"><Iphone13 128GB
+                                            </td>
+                                            
+                                            <td>
+                                                <p><span>30.000.000</span><sup>đ</sup></p>
+                                            </td>
 
+                                            <td>
+                                                <input type="number" value="2" min="1" >
+                                            </td>
+                                            
+                                            <td style="cursor: pointer; text-align: center;">
+                                                Xoá
+                                            </td>
+                                        </tr>
+                                    </tbody> -->
                             </table>
                             <div class="price-total">
-                                <p>Tổng tiền:<span>0</span><sup>đ</sup></p>
+                                <p>Tổng tiền: <span>0</span><sup>đ</sup></p>
                             </div>
                         </form>
                     </div>
@@ -176,31 +192,31 @@
                         <p class="tra-gop">Trả góp 0%</p>
                         <a  href="#"><img id="image" src="Logo/Phone/Oppo Find N3.jpg"></a>
                         <a id="product_name" href="#">OPPO Find N3 5G 16GB/512GB</a>
-                        <p class="prod_1_p"><strong class="price">41.990.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">41.990.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">44.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-6%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Phone/Z Fold 6.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Phone/Z Fold 6.jpg"></a>
                         <a id="product_name" href="#">Samsung Galaxy Z Fold6 5G</a>
-                        <p class="prod_1_p"><strong class="price">41.990.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">41.990.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">43.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-4%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Phone/Xiaomi 14 ultra.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Phone/Xiaomi 14 ultra.jpg"></a>
                         <a id="product_name" href="#">Xiaomi 14 Ultra 5G 16GB/512GB</a>
-                        <p class="prod_1_p"><strong class="price">29.990.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">29.990.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">32.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-9%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Phone/S24 Ultra.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Phone/S24 Ultra.jpg"></a>
                         <a id="product_name" href="#">Samsung Galaxy S24 Ultra 5G</a>
-                        <p class="prod_1_p"><strong class="price">29.990.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">29.990.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">33.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-11%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -209,33 +225,33 @@
                 <div class="product_menu_2">
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Phone/Iphone 15.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Phone/Iphone 15.jpg"></a>
                         <a id="product_name" href="#">iPhone 15 Pro Max Carbon White 8Gb/1Tb</a>
-                        <p class="prod_2_p"><strong class="price">29.490.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">29.490.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">34.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-15%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Phone/Z Fold 5.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Phone/Z Fold 5.jpg"></a>
                         <a id="product_name" href="#"><p>Samsung Galaxy Z Fold5 5G 12GB/256GB</p></a>
-                        <p class="prod_2_p"><strong class="price">27.990.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">27.990.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">40.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-31%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Phone/Iphone 14.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Phone/Iphone 14.jpg"></a>
                         <a id="product_name" href="#">iPhone 14 Pro Max Titan Purple 8Gb/1Tb</a>
-                        <p class="prod_2_p"><strong class="price">26.990.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">26.990.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">29.490.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-8%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Phone/Z Flip 6.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Phone/Z Flip 6.jpg"></a>
                         <a id="product_name" href="#">Samsung Galaxy Z Flip6 5G 12Gb/256Gb</a>
-                        <p class="prod_2_p"><strong class="price">26.990.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">26.990.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">28.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-6%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -251,33 +267,33 @@
                 <div class="product_menu_1">
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/MSI Creator 16.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/MSI Creator 16.jpg"></a>
                         <a id="product_name" href="#">MSI Creator 16 AI Studio</a>
-                        <p class="prod_1_p"><strong class="price">101.990.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">101.990.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">109.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-7%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/Lenovo Legion Pro 7.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/Lenovo Legion Pro 7.jpg"></a>
                         <a id="product_name" href="#">Lenovo Gaming Legion Pro 7</a>
-                        <p class="prod_1_p"><strong class="price">96.990.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">96.990.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">106.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-9%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/Dell Precision 16.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/Dell Precision 16.jpg"></a>
                         <a id="product_name" href="#">Dell Precision 16 5680 i9 13900H</a>
-                        <p class="prod_1_p"><strong class="price">95.890.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">95.890.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">105.290.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-8%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/Asus ROG Strix Scar 18.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/Asus ROG Strix Scar 18.jpg"></a>
                         <a id="product_name" href="#">Asus Gaming ROG Strix SCAR 18</a>
-                        <p class="prod_1_p"><strong class="price">91.990.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">91.990.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">117.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-22%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -286,33 +302,33 @@
                 <div class="product_menu_2">
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/Macbook Pro.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/Macbook Pro.jpg"></a>
                         <a id="product_name" href="#">MacBook Pro 14 inch M3 Max</a>
-                        <p class="prod_2_p"><strong class="price">79.590.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">79.590.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">79.990.000</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/MSI Stealth 18 Mercedes.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/MSI Stealth 18 Mercedes.jpg"></a>
                         <a id="product_name" href="#"><p>MSI Gaming Stealth 18 Mercedes</p></a>
-                        <p class="prod_2_p"><strong class="price">102.990.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">102.990.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">99.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;"></span></p>
                          <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/MSI Creator Z17 HX Studio.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/MSI Creator Z17 HX Studio.jpg"></a>
                         <a id="product_name" href="#">iPhone 14 Pro Max</a>
-                        <p class="prod_2_p"><strong class="price">66.490.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">66.490.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">71.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-7%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Laptop/Asus ROG Strix Scar 16.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Laptop/Asus ROG Strix Scar 16.jpg"></a>
                         <a id="product_name" href="#">Asus Gaming ROG Strix SCAR 16</a>
-                        <p class="prod_2_p"><strong class="price">64.590.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">64.590.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">86.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-25%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -342,33 +358,33 @@
                 <div class="product_menu_1">
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Casio MTP E715D.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Casio MTP E715D.jpg"></a>
                         <a id="product_name" href="#">CASIO 43.4 mm Nam MTP-E715D-7AVDF</a>
-                        <p class="prod_1_p"><strong class="price">3.090.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">3.090.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">3.863.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Casio MTP M305D.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Casio MTP M305D.jpg"></a>
                         <a id="product_name" href="#">CASIO 34 mm Nam MTP-M305D-1AVDF</a>
-                        <p class="prod_1_p"><strong class="price">3.013.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">3.013.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">3.767.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Casio MTP M300D.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Casio MTP M300D.jpg"></a>
                         <a id="product_name" href="#">CASIO 40 mm Nam MTP-M300D-7AVDF</a>
-                        <p class="prod_1_p"><strong class="price">2.863.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">2.863.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">3.579.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Casio MTP M100L.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Casio MTP M100L.jpg"></a>
                         <a id="product_name" href="#">CASIO 40 mm Nam MTP-M300L-7AVDF</a>
-                        <p class="prod_1_p"><strong class="price">2.562.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">2.562.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">3.203.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -377,33 +393,33 @@
                 <div class="product_menu_2">
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Apple  Watch Ultra 2.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Apple  Watch Ultra 2.jpg"></a>
                         <a id="product_name" href="#">Apple Watch Ultra 2 GPS</a>
-                        <p class="prod_2_p"><strong class="price">21.290.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">21.290.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">21.990.000</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Apple Watch Series 9.png"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Apple Watch Series 9.png"></a>
                         <a id="product_name" href="#"><p>Apple Watch Series 9 GPS</p></a>
-                        <p class="prod_2_p"><strong class="price">13.690.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">13.690.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">13.890.000</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Apple Watch Series 9 pink.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Apple Watch Series 9 pink.jpg"></a>
                         <a id="product_name" href="#">Apple Watch Series 9 GPS 41mm</a>
-                        <p class="prod_2_p"><strong class="price">9.890.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">9.890.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">10.490.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-5%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Watch/Samsung galaxy Watch 7 LTE.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Watch/Samsung galaxy Watch 7 LTE.jpg"></a>
                         <a id="product_name" href="#">Samsung Galaxy Watch7 LTE 44mm dây silicone</a>
-                        <p class="prod_2_p"><strong class="price">9.490.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">9.490.000</strong><span>₫</span></p>
                         <!-- <p class="prod_2_p"><span style="text-decoration-line: line-through;">28.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-6%</span></p> -->
                          <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -413,39 +429,39 @@
         <!------------------------ Phu kien ------------------------>
         <div class="product_4">
             <div class="product_banner">
-                <img src="Logo/Accessory/phu-kien_banner.png">
+                <img style="border-radius: 15px;" src="Logo/Accessory/phu-kien_banner.png">
             </div>
             <div class="product_container">
                 <div class="product_menu_1">
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/Tai nghe Bluetooth.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/Tai nghe Bluetooth.jpg"></a>
                         <a id="product_name" href="#">Tai nghe Marshall Major IV</a>
-                        <p class="prod_1_p"><strong class="price">3.420.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">3.420.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">4.290.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/HP HyperX.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/HP HyperX.jpg"></a>
                         <a id="product_name" href="#">Tai nghe Gaming HP HyperXI</a>
-                        <p class="prod_1_p"><strong class="price">790.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">790.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">890.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-11%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/Sac du phong.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/Sac du phong.jpg"></a>
                         <a id="product_name" href="#">Xmobile 22.5W T121</a>
-                        <p class="prod_1_p"><strong class="price">390.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">390.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">800.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-51%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/G052.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/G052.jpg"></a>
                         <a id="product_name" href="#">Chuột Không dây Logitech G502</a>
-                        <p class="prod_1_p"><strong class="price">3.085.000</strong><span>₫</span></p>
+                        <p class="prod_1_p"><strong class="prices">3.085.000</strong><span>₫</span></p>
                         <p class="prod_1_p"><span style="text-decoration-line: line-through;">3.890.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -454,33 +470,33 @@
                 <div class="product_menu_2">
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/Hub sac.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/Hub sac.jpg"></a>
                         <a id="product_name" href="#">Sạc 3 cổng kèm Cáp Type C - Type C Baseus CCGAN140CS</a>
-                        <p class="prod_2_p"><strong class="price">1.720.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">1.720.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">2.150.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/Magnetic Power.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/Magnetic Power.jpg"></a>
                         <a id="product_name" href="#"><p>Sạc không dây Magnetic 8 in 1 Anker 637 MagGo A9137</p></a>
-                        <p class="prod_2_p"><strong class="price">27.990.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">27.990.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">40.990.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-31%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/Hub TypeC.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/Hub TypeC.jpg"></a>
                         <a id="product_name" href="#">Adapter chuyển đổi USB C 6 in 1 Ugreen 60384</a>
-                        <p class="prod_2_p"><strong class="price">870.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">870.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">1.130.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-7%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
                     <div class="prod_1">
                         <p class="tra-gop">Trả góp 0%</p>
-                        <a id="image" href="#"><img src="Logo/Accessory/Dock Charge.jpg"></a>
+                        <a href="#"><img id="image" src="Logo/Accessory/Dock Charge.jpg"></a>
                         <a id="product_name" href="#">Sạc không dây Magnetic Belkin BoostCharge WIA008</a>
-                        <p class="prod_2_p"><strong class="price">1.350.000</strong><span>₫</span></p>
+                        <p class="prod_2_p"><strong class="prices">1.350.000</strong><span>₫</span></p>
                         <p class="prod_2_p"><span style="text-decoration-line: line-through;">1.690.000</span><span style="text-decoration-line: line-through;">₫</span><span class="prod_span" style="margin-left: 5px;">-20%</span></p>
                         <button>Thêm vào giỏ hàng</button>
                     </div>
@@ -489,6 +505,7 @@
         </div>
     </div>
 </main>
+<!--------------------------------Footer----------------------------->
 <footer>
     <div class="footer_container">
         <div class="sticky_footer">
@@ -532,7 +549,7 @@
         </div>
     </div>
 </footer>
-
+<!--------------------------------Script----------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="assets/javascript/Index.js"></script>
     <script src="assets/javascript/Cart.js"></script>
