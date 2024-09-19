@@ -6,9 +6,11 @@ btn.forEach(function(button, index) {
             var productImg = product.querySelector("#image").src
             var productName = product.querySelector("#product_name").innerText
             var productPrice = product.querySelector(".prices").innerText
+            
             addcart(productPrice, productImg, productName)
         })
     })
+    
 // ------------Thêm sản phẩm
 function addcart(productPrice, productImg, productName) {
     var addtr = document.createElement("tr")
@@ -34,13 +36,17 @@ function carttotal() {
     var cartItem = document.querySelectorAll("tbody tr")
     var totalC = 0;
     for (var i = 0; i < cartItem.length; i++) {
-        var inputValue = cartItem[i].querySelector("input").value
+
+        var inputValue = cartItem[i].querySelector("td input").value
         var productPrice = cartItem[i].querySelector(".price").innerHTML
-        totalA = inputValue * productPrice * 1000
+        productPrice = productPrice.replace(/\./g, '')
+        totalA = Number(inputValue) * Number(productPrice)
 
         totalC = totalC + totalA
-
-            // console.log(totalC)
+        
+        console.log(inputValue)
+        console.log(productPrice)
+        console.log(totalC)
     }
     var cartTotalA = document.querySelector(".price-total span")
     cartTotalA.innerHTML = totalC.toLocaleString('de-DE')
