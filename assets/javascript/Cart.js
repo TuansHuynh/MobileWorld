@@ -36,7 +36,6 @@ function carttotal() {
     var cartItem = document.querySelectorAll("tbody tr")
     var totalC = 0;
     for (var i = 0; i < cartItem.length; i++) {
-
         var inputValue = cartItem[i].querySelector("td input").value
         var productPrice = cartItem[i].querySelector(".price").innerHTML
         productPrice = productPrice.replace(/\./g, '')
@@ -46,6 +45,7 @@ function carttotal() {
         
         console.log(inputValue)
         console.log(productPrice)
+        console.log(inputValue * productPrice)
         console.log(totalC)
     }
     var cartTotalA = document.querySelector(".price-total span")
