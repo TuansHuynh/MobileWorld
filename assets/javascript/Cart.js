@@ -6,12 +6,10 @@ btn.forEach(function(button, index) {
             var productImg = product.querySelector("#image").src
             var productName = product.querySelector("#product_name").innerText
             var productPrice = product.querySelector(".prices").innerText
-            
             addcart(productPrice, productImg, productName)
         })
     })
-    
-// ------------Thêm sản phẩm
+// ------------Thêm sản phẩm (Add Product)--------------------------------
 function addcart(productPrice, productImg, productName) {
     var addtr = document.createElement("tr")
     var cartItem = document.querySelectorAll("tbody tr")
@@ -19,10 +17,10 @@ function addcart(productPrice, productImg, productName) {
         var productT = document.querySelectorAll(".title")
         if (productT[i].innerHTML == productName) {
             alert("Sản phẩm đã có trong giỏ hàng")
+            // alert("The product is already in the shopping cart.")
             return
         }
     }
-
     var trcontent = '<tr><td style="display: flex; align-items: center;"><img src="' + productImg + '"><span class="title">' + productName + '</span></td><td><p><span class="price">' + productPrice + '</span><sup>đ</sup></p></td><td><input type="number" value="1" min="1"></td><td style="cursor: pointer;"><span class="cart-delete">Xóa</span></td></tr>'
     addtr.innerHTML = trcontent
     var cartTable = document.querySelector("tbody")
@@ -31,7 +29,7 @@ function addcart(productPrice, productImg, productName) {
     carttotal()
     deleteCart()
 }
-// ----------------Tính tổng tiền
+// ----------------Tính tổng tiền (Total Price)--------------------------
 function carttotal() {
     var cartItem = document.querySelectorAll("tbody tr")
     var totalC = 0;
@@ -43,16 +41,16 @@ function carttotal() {
 
         totalC = totalC + totalA
         
-        console.log(inputValue)
-        console.log(productPrice)
-        console.log(inputValue * productPrice)
-        console.log(totalC)
+        // console.log(inputValue)
+        // console.log(productPrice)
+        // console.log(inputValue * productPrice)
+        // console.log(totalC)
     }
     var cartTotalA = document.querySelector(".price-total span")
     cartTotalA.innerHTML = totalC.toLocaleString('de-DE')
     inputchange()
 }
-// -----------------------------Xóa sản phẩm
+// -----------------------------Xóa sản phẩm (Delete Product)-------------------------------
 function deleteCart() {
     var cartItem = document.querySelectorAll("tbody tr")
     for (var i = 0; i < cartItem.length; i++) {

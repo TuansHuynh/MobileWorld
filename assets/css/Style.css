@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+@media (max-width: 768px){
+    
+}
 a{
     text-decoration: none;
     color: black;
@@ -253,7 +256,6 @@ main{
     display: flex;
     justify-content: center;
     margin: 20px;
-    /* flex-direction: column; */
 }
 .product_banner span{
     display: flex;
@@ -334,10 +336,12 @@ main{
     text-align: center;
 }
 .tra-gop{
-    border-radius: 3px;
+    border-radius: 5px;
     width: fit-content;
-    background-color: #e2e1e1;
+    background-color: #f4f4f4;
     margin-bottom: 15px;
+    padding: 5px;
+    font-size: 13px;
 }
 .prod_span{
     background-color: #cdcdcd;
